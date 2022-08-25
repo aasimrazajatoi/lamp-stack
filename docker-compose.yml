@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  nginx:
+    build: .
+    volumes: 
+     - ./www/html/:/var/www/html/
+    ports:
+     - 8080:80
+    restart: unless-stopped
+
+
+  php:
+    build: ./php/
+    volumes:
+     - ./www/html/:/var/www/html
+    restart: unless-stopped
+    ports:
+     - 9000:9000
+    depends_on: 
+     - mysql  
+        
+  mysql:
+    image: mysql
+    volumes:
+     - ./mysql:/var/lib/mysql
+    environment:
+     - MYSQL_ROOT_PASSWORD=secret
+     - MYSQL_DATABASE=mydb
+     - MYSQL_USER=admin
+     - MYSQL_PASSWORD=academy!2345
+    ports:
+     - 3307:3306     
