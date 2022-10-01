@@ -6,7 +6,7 @@ services:
     volumes: 
      - ./www/html/:/var/www/html/
     ports:
-     - 8080:80
+     - 80:8080
     restart: unless-stopped
 
 
@@ -16,7 +16,7 @@ services:
      - ./www/html/:/var/www/html
     restart: unless-stopped
     ports:
-     - 9000:9000
+     - 9090:9090
     depends_on: 
      - mysql  
         
@@ -30,4 +30,4 @@ services:
      - MYSQL_USER=admin
      - MYSQL_PASSWORD=academy!2345
     ports:
-     - 3307:3306     
+     - 3306:3307     
