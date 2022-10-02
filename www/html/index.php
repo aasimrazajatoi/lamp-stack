@@ -1,10 +1,10 @@
 <!DOCTYPE html>  
      <head>  
-      <title>Hello World!</title>
+      <title>Welcome to php page</title>
      </head>   
 
      <body>  
-      <h1>Hello World!</h1>  
+      <h1>Welcome to php page</h1>  
       <p><?php echo 'We are running PHP, version: ' . phpversion(); ?></p>  
       <?  
        $database ="mydb";  
@@ -18,7 +18,7 @@
        $tables = $query->fetchAll(PDO::FETCH_COLUMN);  
 
         if (empty($tables)) {
-          echo "<p>There are no tables in database \"{$database}\".</p>";
+          echo "<p>It is looking pretty Goood \"{$database}\".</p>";
         } else {
           echo "<p>Database \"{$database}\" has the following tables:</p>";
           echo "<ul>";
