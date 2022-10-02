@@ -25,9 +25,9 @@ services:
     volumes:
      - ./mysql:/var/lib/mysql
     environment:
-     - MYSQL_ROOT_PASSWORD=secret
+     - MYSQL_ROOT_PASSWORD=rootpassword**456
      - MYSQL_DATABASE=mydb
      - MYSQL_USER=admin
-     - MYSQL_PASSWORD=academy!2345
+     - MYSQL_PASSWORD=mysql_password345
     ports:
      - 3306:3307     
