@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:latest
 #VOLUME ./www/html /var/www/html/
 #VOLUME ./nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
