@@ -9,7 +9,7 @@
       <?  
        $database ="mydb";  
        $user = "myuser";  
-       $password = "Academy!2345";  
+       $password = "";  
        $host = "172.18.0.2";
        $port = "3306";  
 
