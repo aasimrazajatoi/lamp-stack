@@ -5,6 +5,4 @@ RUN docker-php-ext-install pdo_mysql
 
 RUN apt install nginx
 
-RUN apt install redis
-
-CMD [php , index.php]
+CMD ["php index.php"]
