@@ -1,6 +1,6 @@
 <!DOCTYPE html>  
      <head>  
-      <title>Welcome to php page</title>
+      <title>Home Page Welcome to you</title>
      </head>   
 
      <body>  
