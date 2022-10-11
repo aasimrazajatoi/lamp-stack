@@ -4,7 +4,7 @@
      </head>   
 
      <body>  
-      <h1>Welcome to php page</h1>  
+      <h1>Welcome to php home page</h1>  
       <p><?php echo 'We are running PHP, version: ' . phpversion(); ?></p>  
       <?  
        $database ="mydb";  
@@ -31,11 +31,12 @@
         if ($t < "10") {
           echo "Have a good morning!";
         } elseif ($t < "20") {
-          echo "Have a good day!";
+          echo "Have a good afternoon!";
         } else {
           echo "Have a good night!";
         }
         ?>
+          <h1>Thanks for visiting us</h1> 
     </body>
 </html>
 
