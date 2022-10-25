@@ -4,7 +4,7 @@ VOLUME ./nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 
 
-FROM php:7.0-fpm
+FROM php:7.4-fpm
 VOLUME ./www/html/ /var/www/html/
 EXPOSE 9000
 RUN docker-php-ext-install pdo_mysql
